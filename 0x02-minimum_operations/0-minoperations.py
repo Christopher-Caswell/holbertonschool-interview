@@ -19,7 +19,4 @@ def minOperations(n):
         totalPasted += copyAll
         operationIteration += 1
 
-    if totalPasted == n:
-        return operationIteration
-
-    return 0
+    return operationIteration
