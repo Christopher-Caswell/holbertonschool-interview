@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-""" Minimum number of operations necessary to copy and paste h such that it fulfills n """
+"""
+Minimum number of operations necessary to copy
+and paste h such that it fulfills n
+"""
+
 
 def minOperations(n):
     """ Operate. If n is impossible, return 0 """
@@ -13,7 +17,7 @@ def minOperations(n):
 
     while totalPasted < n:
         if n % totalPasted == 0:
-            copyAll == totalPasted
+            copyAll = totalPasted
             operationIteration += 1
     
         totalPasted += copyAll
