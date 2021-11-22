@@ -5,7 +5,7 @@ def minOperations(n):
     """ Operate. If n is impossible, return 0 """
 
     copyAll = 0
-    totalPasted = 0
+    totalPasted = 1
     operationIteration = 0
 
     if n < 2:
