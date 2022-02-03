@@ -75,7 +75,7 @@ void slideRight(int *line, size_t size)
 size_t x = size - 2;
 size_t y = size - 1;
 
-if (size > 2)
+if (size > 1)
 {
 for (; x != 0; x--)
 {
