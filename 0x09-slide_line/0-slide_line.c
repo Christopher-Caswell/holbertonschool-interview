@@ -75,6 +75,8 @@ void slideRight(int *line, size_t size)
 size_t x = size - 2;
 size_t y = size - 1;
 
+if (size > 2)
+{
 for (; x != 0; x--)
 {
 
@@ -106,4 +108,7 @@ if (line[y] == line[x] || line[y] == 0)
 line[y] += line[x];
 line[x] = 0;
 }
+}
+
+return;
 }
