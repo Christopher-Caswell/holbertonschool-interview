@@ -98,13 +98,6 @@ line[y] = line[x];
 line[x] = 0;
 }
 
-else if (line[y - 1] == 0 && line[x] != 0)
-{
-
-y--;
-line[x] = line[y];
-line[x] = 0;
-}
 else
 y--;
 }
@@ -113,6 +106,13 @@ if (line[y] == line[x] || line[y] == 0)
 {
 
 line[y] += line[x];
+line[x] = 0;
+}
+if (line[y - 1] == 0 && line[x] != 0)
+{
+
+y--;
+line[x] = line[y];
 line[x] = 0;
 }
 }
