@@ -16,18 +16,18 @@ def island_perimeter(grid):
     The island doesn’t have “lakes” (water inside that isn’t connected to the water surrounding the island).
   """
 
-  dirt = 0
+    dirt = 0
 
-  for rows in range(len(grid)):
-    for cols in range(len(grid[0])):
-      if grid[rows][cols] == 1:
-        if rows == 0 or grid[rows - 1][cols] == 0:
-          dirt += 1
-        if rows == len(grid) - 1 or grid[rows + 1 ][cols] == 0:
-          dirt += 1
-        if cols == 0 or grid[rows][cols - 1] == 0:
-          dirt += 1
-        if cols == len(grid[0]) - 1 or grid[rows][cols + 1] == 0:
-          dirt += 1
+    for rows in range(len(grid)):
+        for cols in range(len(grid[0])):
+            if grid[rows][cols] == 1:
+            if rows == 0 or grid[rows - 1][cols] == 0:
+                dirt += 1
+            if rows == len(grid) - 1 or grid[rows + 1 ][cols] == 0:
+                dirt += 1
+            if cols == 0 or grid[rows][cols - 1] == 0:
+                dirt += 1
+            if cols == len(grid[0]) - 1 or grid[rows][cols + 1] == 0:
+                dirt += 1
 
-  return dirt
+    return dirt
