@@ -46,6 +46,7 @@ def isWinner(x, nums):
             nums.pop(0)
     return None
 
+
 def isPrime(n):
     if n == 2 or n == 3:
         return True
