@@ -26,26 +26,19 @@ def isWinner(x, nums):
     You cannot import any packages in this task
     """
 
-    # Maria's turn
-    for i in range(x):
-        if nums[0] == 1:
-            return "Ben"
-        if isPrime(nums[0]):
-            nums.pop(0)
-        else:
-            nums.pop(0)
-            nums.pop(0)
-    # Ben's turn
-    for i in range(x):
-        if nums[0] == 1:
+    if x is None or nums is None or x == 0 or nums == []:
+            return None
+    newList = []
+    for i in nums:
+        if isPrime(i):
+            newList.append(i)
+    if len(newList) == 0:
+        return None
+    else:
+        if len(newList) % 2 == 0:
             return "Maria"
-        if isPrime(nums[0]):
-            nums.pop(0)
         else:
-            nums.pop(0)
-            nums.pop(0)
-    return None
-
+            return "Ben"
 
 def isPrime(n):
     if n == 2 or n == 3:
