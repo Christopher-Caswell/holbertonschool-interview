@@ -29,6 +29,8 @@ def isWinner(x, nums):
     if x is None or nums is None or x == 0 or nums == []:
             return None
     newList = []
+    if len(nums) == 1 and nums[0] == 1:
+        return "Ben"
     for i in nums:
         if isPrime(i):
             newList.append(i)
@@ -39,6 +41,7 @@ def isWinner(x, nums):
             return "Maria"
         else:
             return "Ben"
+
 
 def isPrime(n):
     if n == 2 or n == 3:
